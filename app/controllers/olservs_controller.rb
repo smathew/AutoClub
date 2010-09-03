@@ -1,0 +1,2 @@
+class OlservsController < ApplicationController
+end

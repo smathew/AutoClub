@@ -1,0 +1,18 @@
+<%
+slideimage1 = slideimages[0]
+slideimg_arr = Array.new
+slideimages.each do |obj|
+	slideimg_arr << "[ \"#{obj[:image]}\", \"#{obj[:url]}\" ]"
+end
+%>
+					<!-- Rotating banner -->
+					<div id="slideshow">
+						<%= link_to image_tag( slideimages[0][:image] ), slideimages[0][:url] %>
+						<%= javascript_include_tag "slideshow" %>
+						<script type="text/javascript">
+						//<![CDATA[
+						window.slideShowWrapper = "slideshow";
+						window.slideShowImages = [ <%= slideimg_arr.join( ", " ) %> ];
+						//]]>
+						</script>
+					</div>

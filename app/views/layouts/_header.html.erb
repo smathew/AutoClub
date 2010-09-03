@@ -1,0 +1,100 @@
+<div id="container">
+		<%= link_to image_tag( "header2.gif", :alt => "Header" ), root_path %>
+		<div id="topdivider">
+			<span class="style11">
+				<%= link_to "Home", root_path %> | <%= link_to "Contact Us", contact_path %>
+			</span>
+		</div>
+		<div id="outercontent" class="clearfix">
+			<div id="outerleft">
+				<form id="hbloginF" method="post" action="https://www.autoclubfcu.com/hbv3_2/login.asp">
+					<table class="login">
+						<tr>
+							<th colspan="2">Home banking Log-in</th>
+						</tr>
+						<tr>
+							<td><span class="style10"><label for="hbloginFaccount">Account Number</label></span></td>
+							<td><input type="text" name="account" id="hbloginFaccount" size="10" class="formfield" /></td>
+						</tr>
+						<tr>
+							<td><span class="style10"><label for="hbloginFpassword">PIN</label></span></td>
+							<td><input type="password" name="pin" id="hbloginFpassword" size="10" class="formfield" /></td>
+						</tr>
+						<tr>
+							<td colspan="2"><!--<INPUT TYPE="submit" VALUE="LOGIN">-->
+								<input type="submit" value="Sign In" class="submit" />
+							</td>
+						</tr>
+						<tr>
+							<th colspan="2">Welcome to ACFCU</th>
+						</tr>
+					</table>
+				</form>
+				<ul id="menu">
+					<li>
+						<%= link_to "Become a Member", memberjoin_path %>
+					</li>
+					<li class="arrowmenu">
+						<%= link_to "About ACFCU", aboutus_path %>
+						<ul>
+							<li><%= link_to "About Us", aboutus_path %>
+							<li><%= link_to "FAQ", faq_path %></li>
+						</ul>
+					</li>
+					<li class="arrowmenu">
+						<%= link_to "What's New", whatsnew_path %>	
+						<ul>
+							<li><%= link_to 'Repos', repos_path %></li>
+							<li><%= link_to 'Newsletter', newsletter_path %></li>
+						</ul>
+					</li>
+					<li class="arrowmenu">
+						<%= link_to 'Products &amp; Services', prodservices_path %></a>
+						<ul>
+							<li><%= link_to 'Regular Savings', prodservices_path(:anchor => 'savings') %></li>
+							<li><%= link_to 'Holiday Club', prodservices_path(:anchor => 'holiday') %></li>
+							<li><%= link_to 'Money Market Account', prodservices_path(:anchor => 'moneymarket') %></li>
+							<li><%= link_to 'Certificates of Deposit', prodservices_path(:anchor => 'certificates') %></li>
+							<li><%= link_to 'IRAs', prodservices_path(:anchor => 'ira') %></li>
+						</ul>
+					</li>
+					<li class="arrowmenu">
+						<%= link_to 'Online Services', onlinesrvs_path %>
+						<ul>
+							<li><%= link_to "Applications", onlineapplications_path %></li>
+							<li><%= link_to "Check Reordering", "http://reorder.libertysite.com/", :rel => 'confirm' %></li>
+							<li><%= link_to "Info Desk", infodesk_path %></li>
+							<li><%= link_to "Fee Schedule", cufees_path %></li>
+							<li><%= link_to "Loan Calculator", loancalc_path %></li>
+							<li><%= link_to "Links", links_path %></li>
+							<li><%= link_to "Contact Us", contact_path %></li>
+						</ul>
+					</li>
+					<li class="arrowmenu">
+						<%= link_to 'Current Rates', rate_path %>
+						<ul>
+							<li><%= link_to 'Loans', rate_path(:anchor => 'loans') %></li>
+							<li><%= link_to 'Savings', rate_path(:anchor => 'savings') %></li>
+							<li><%= link_to 'Share Certificates', rate_path(:anchor => 'shares') %></li>
+						</ul>
+					</li>
+					<li><%= link_to 'Scam Alerts', scams_path %></li>
+				</ul>
+                <div class="pad"><p class="centertext">&nbsp;</p>
+                    <p class="centertext">To find one of over 28,000 of the nearest
+                    CO-OP ATM machine near you, including
+                        7-Eleven ATM&rsquo;s,
+   by clicking <%= link_to "here", "http://www.co-opfs.org/public/locators/atmlocator/index.cfm", :rel => 'confirm' %>, 
+    or Call Toll Free 1-888-748-3266</p>
+                <p class="centertext"><strong>Also</strong></p>
+                <p class="centertext">An Additional 700 ATMs available to
+                        you via the Bank of the West ATM network for withdrawals and deposits
+                   <%= link_to "CLICK HERE", "http://www.bankofthewest.com/customer-service/branch-results.html", :rel => 'external', :class => "bold" %> to find a location.</p>
+                </div>
+<!--<p class="centertext">
+            	<br />
+            	<br />
+            	<%= link_to image_tag("messaging.gif", :alt => "Text Messaging Scam" ), scams_path %>
+             </p>-->
+            </div>
+			<div id="outerright" class="clearfix">

@@ -1,0 +1,59 @@
+<%= javascript_include_tag "style" %>
+<%= javascript_include_tag "slcv" %>
+<TABLE WIDTH=500>
+  <tr> 
+    <td> 
+      <CENTER>
+      </CENTER>
+      <% form_tag(loancalcr_path, :method => :get) do %>
+        <CENTER>
+          <TABLE Border=1 Cellpadding=7>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
+                <CENTER>
+                  <span class=FontThree> Standard Loan Calculator</span>
+                </CENTER>
+              </TD>
+            </TR>
+            <TR> </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Loan Amount: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> 
+                <INPUT style="font-family: Verdana, Arial; font-size: 8pt" onFocus=select(); onBlur = checkLA(this.form); NAME = LoanAmount VALUE=25000 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> 
+                <INPUT style="font-family: Verdana, Arial; font-size: 8pt" onFocus=select(); onBlur = checkIR(this.form); NAME = InterestRate VALUE=8 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Years: </span> 
+              </TD>
+              <TD BGCOLOR=#EEEEFF> 
+                <INPUT style="font-family: Verdana, Arial; font-size: 8pt" onFocus=select(); onBlur = checkY(this.form); NAME = NumberOfYears VALUE=5 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Periods Per 
+                Year: </span> </TD>
+              <TD BGCOLOR=#FFEEFF> 
+                <INPUT style="font-family: Verdana, Arial; font-size: 8pt" onFocus=select(); onBlur = checkP(this.form); NAME = NumberOfPeriods VALUE=12 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFive> 
+                <INPUT Type="radio" NAME="calculate_option" VALUE="0" CHECKED>
+                Calculate Payment Only<BR>
+                <INPUT Type="radio" NAME="calculate_option" VALUE="1">
+                Calculate Payment and Display Amortization Schedule<BR>
+                </span> </TD>
+            </TR>
+          </TABLE>
+		  <%= javascript_include_tag "enda" %>
+        </center>
+      <% end %>
+</table>

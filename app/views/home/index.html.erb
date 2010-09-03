@@ -1,0 +1,50 @@
+<div id="innercontent" class="clearfix">
+	<%= render :partial => 'layouts/slideshow', :locals => {
+		:slideimages => [
+			{ :image => 'backtoschool_signature2.jpg', :url => 'pdf/horizons.pdf' },
+			{ :image => 'backtoschool.jpg', :url => transfer_path },
+			{ :image => 'realestate.jpg', :url => realestate_path }
+		]}
+	-%>	
+		
+                              <hr />
+                                <h2 class="centertext">ATTENTION:<br /> If you have received an email regarding a &quot;Member Survey&quot; or &quot;Online Survey&quot; claiming to be from the NCUA - this is a phishing attempt to gain your personal information.  These emails are not from the NCUA and
+                                should be disregarded.  If you feel your information has been compromised, please contact the credit union immediately.</h2>
+                                <hr />
+                                <h2>Get Ahead of ATM/Debit Card Overdraft Regulation
+                                    Changes</h2>
+                                <p>Congress recently changed the rules to protect
+                                    consumers from overdraft fees, but this means
+                                    you, our member, need to opt-in to your ATM/Debit
+                                    Card overdraft protection <strong>BEFORE</strong> the
+                                    August 15, 2010 deadline if you do not want
+                                    transactions canceled when you overdraw your
+                                    account balance. For more information regarding
+                                    Regulation E changes and to opt-in to overdraft
+                                    protection please <%= link_to "click here", regulatione_path,  :class => 'bold' %> to go to our <strong>Regulation E</strong> page. </p>
+                                <p>&nbsp;</p>
+                                <p><%= image_tag "go_green_estate.jpg", :alt => '' %></p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <%= link_to image_tag("promo1.jpg", :alt => ""), "pdf/mastercard.pdf", :rel => 'external' %></td>                      
+                                        <td><%= link_to image_tag("promo2a.jpg", :alt => ""), estatements_path %></td>
+                                        <td><%= link_to image_tag("promo3.jpg", :alt => "Promotion"), "flash/acfcu.swf" %></td>
+                                    </tr>
+                                </table>
+                                <p>&nbsp;</p>
+                                </div>
+                                <table class="prefoot">
+                                    <tr>
+                                        <td><br />
+                                            <%= image_tag "enterpriselogo.gif", :alt => "Enterprise Logo" %>
+                                            <p class="centertext">Search for a car!<br />
+                                                <strong><%= link_to "http://www.cuautodeals.com", "http://www.cuautodeals.com", :rel => 'external' %></strong></p></td>
+                                        <td><p class="centertext">
+                                                <%= image_tag "memberrewards.jpg", :alt => "Member Rewards" %></p>
+                                            <p class="centertext"> 
+                                                <strong><%= link_to "For a Member Rewards<br /> Referral Form - Click here!", "pdf/MEMBER REWARDS flyer feb08.doc", :rel => 'external' %></strong></p></td>
+                                        <td><p class="centertext">
+                                                <strong><%= link_to "To find one of over 25,000 of the nearest CO-OP ATM machine near you, including<br /> 7-Eleven ATM&rsquo;s, just visit the CO-OP&nbsp; web site by clicking here, or Call Toll Free 1-888-748-3266", "http://www.co-opnetwork.org/public/find_atm/index.cfm", :rel => 'external' %></strong></p></td>
+                                    </tr>
+                                </table>

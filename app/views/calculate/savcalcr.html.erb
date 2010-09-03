@@ -1,0 +1,151 @@
+<%= javascript_include_tag "style" %>
+<%= javascript_include_tag "pad" %>
+<%= javascript_include_tag "read" %>
+<TABLE WIDTH=500>
+  <tr> 
+    <td> 
+      <SCRIPT Language="JavaScript">
+alert("Please wait while Savings Calculator builds the savings schedule. This can take up to 30 seconds or more, depending on the speed of your computer's processor and the web browser you are using. Click OK to continue.");
+</SCRIPT>
+      <CENTER>
+      </CENTER>
+      <% form_tag do %>
+        <CENTER>
+          <TABLE Border=1 Cellpadding=7>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
+                <CENTER>
+                  <span class=FontThree> Savings Calculator</span>
+                </CENTER><hr size="1" width="100%">
+                <span class=FontThree> 
+                <CENTER>
+                  Results
+                </CENTER>
+                </span> </TD>
+            </TR>
+            <TR> </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var SO = getValue(passed,'calculate_option');
+	if (SO == 0) {
+		document.write("Beginning Balance:");
+	}
+	if (SO == 1) {
+		document.write("Ending Balance:");
+	}
+	if (SO == 2) {
+		document.write("Beginning Balance:");
+	}
+</SCRIPT>
+                </span> </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+			  <%= javascript_include_tag "scc" %>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var B = getValue(passed,'InterestRate');
+	if (B < 0) { B = 0 }
+	document.write(roundingPad((B * 100.00)/100)+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var SO = getValue(passed,'calculate_option');
+	if (SO == 0) {
+		document.write("Periodic Contribution:");
+	}
+	if (SO == 1) {
+		document.write("Periodic Contribution:");
+	}
+	if (SO == 2) {
+		document.write("Ending Balance:");
+	}
+</SCRIPT>
+                </span> </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	if (UO == 0) {
+		document.write(currencyPad(C));
+	}
+	if (UO == 1) {
+		document.write(currencyPad(C));
+	}
+	if (UO == 2) {
+		document.write(currencyPad(Z));
+	}
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Periods: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	document.write(integerPad(D));
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Compounding Period: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	document.write(strY);
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Inflation Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	document.write(""+roundingPad((H*100.00)/100)+"%");
+</SCRIPT>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	var SO = getValue(passed,'calculate_option');
+	if (SO == 0) {
+		document.write("Ending Balance:");
+	}
+	if (SO == 1) {
+		document.write("Beginning Balance:");
+	}
+	if (SO == 2) {
+		document.write("Periodic Contribution:");
+	}
+</SCRIPT>
+                </span> </TD>
+              <TD BGCOLOR=#EEEEFF> <span class=FontFour> 
+                <SCRIPT LANGUAGE="JavaScript">
+	if (UO == 0) {
+		document.write(currencyPad(Z));
+	}
+	if (UO == 1) {
+		document.write(currencyPad(A));
+	}
+	if (UO == 2) {
+		document.write(currencyPad(C));
+	}
+</SCRIPT>
+                </span> </TD>
+            </TR>
+          </TABLE>
+          <br>
+          <br>
+		  <%= javascript_include_tag "sca" %>
+          <br>
+          <br>
+          <%= javascript_include_tag "endb" %>
+        </center>
+      <% end %>
+</table>

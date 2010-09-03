@@ -1,0 +1,183 @@
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-03 13:42:59) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#memberjoin (for 127.0.0.1 at 2010-09-03 13:43:04) [GET]
+Rendering template within layouts/application
+Rendering home/memberjoin
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/memberjoin]
+
+
+Processing HomeController#aboutus (for 127.0.0.1 at 2010-09-03 13:43:11) [GET]
+Rendering template within layouts/application
+Rendering home/aboutus
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/aboutus]
+
+
+Processing HomeController#faq (for 127.0.0.1 at 2010-09-03 13:43:14) [GET]
+Rendering template within layouts/application
+Rendering home/faq
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/faq]
+
+
+Processing HomeController#faq (for 127.0.0.1 at 2010-09-03 13:43:15) [GET]
+Rendering template within layouts/application
+Rendering home/faq
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/home/faq]
+
+
+Processing HomeController#faq (for 127.0.0.1 at 2010-09-03 13:43:23) [GET]
+Rendering template within layouts/application
+Rendering home/faq
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/faq]
+
+
+Processing HomeController#faq (for 127.0.0.1 at 2010-09-03 13:43:25) [GET]
+Rendering template within layouts/application
+Rendering home/faq
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home/faq]
+
+
+Processing HomeController#contact (for 127.0.0.1 at 2010-09-03 13:43:33) [GET]
+Rendering template within layouts/application
+Rendering home/contact
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-03 13:43:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing OlservsController#cufees (for 127.0.0.1 at 2010-09-03 13:43:39) [GET]
+Rendering template within layouts/application
+Rendering olservs/cufees
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/cufees]
+
+
+Processing OlservsController#infodesk (for 127.0.0.1 at 2010-09-03 13:43:41) [GET]
+Rendering template within layouts/application
+Rendering olservs/infodesk
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/infodesk]
+
+
+Processing CalculateController#loancalc (for 127.0.0.1 at 2010-09-03 13:43:44) [GET]
+Rendering template within layouts/application
+Rendering calculate/loancalc
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalc]
+
+
+Processing CalculateController#loancalcr (for 127.0.0.1 at 2010-09-03 13:43:48) [GET]
+  Parameters: {"NumberOfPeriods"=>"12", "LoanAmount"=>"25000", "InterestRate"=>"4", "NumberOfYears"=>"5", "calculate_option"=>"0"}
+Rendering template within layouts/application
+Rendering calculate/loancalcr
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalcr?LoanAmount=25000&InterestRate=4&NumberOfYears=5&NumberOfPeriods=12&calculate_option=0]
+
+
+Processing CalculateController#loancalc (for 127.0.0.1 at 2010-09-03 14:12:31) [GET]
+Rendering template within layouts/application
+Rendering calculate/loancalc
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/loancalc]
+
+
+Processing CalculateController#calculates (for 127.0.0.1 at 2010-09-03 14:12:44) [GET]
+Rendering template within layouts/application
+Rendering calculate/calculates
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/calculates]
+
+
+Processing CalculateController#savcalc (for 127.0.0.1 at 2010-09-03 14:12:48) [GET]
+Rendering template within layouts/application
+Rendering calculate/savcalc
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (62.5ms)
+Completed in 94ms (View: 94, DB: 0) | 200 OK [http://localhost/savcalc]
+
+
+Processing CalculateController#savcalcr (for 127.0.0.1 at 2010-09-03 14:13:01) [GET]
+  Parameters: {"NumberOfPeriods"=>"0", "compound_option"=>"1", "InterestRate"=>"8", "today"=>"1", "InflationRate"=>"3", "PeriodicContribution"=>"0", "calculate_option"=>"0", "BeginningBalance"=>"0", "EndingBalance"=>"0"}
+Rendering template within layouts/application
+Rendering calculate/savcalcr
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/savcalcr?calculate_option=0&BeginningBalance=0&InterestRate=8&PeriodicContribution=0&NumberOfPeriods=0&EndingBalance=0&compound_option=1&today=1&InflationRate=3]
+
+
+Processing CalculateController#loancalc (for 127.0.0.1 at 2010-09-03 14:14:39) [GET]
+Rendering template within layouts/application
+Rendering calculate/loancalc
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalc]
+
+
+Processing CalculateController#loancalcr (for 127.0.0.1 at 2010-09-03 14:14:54) [GET]
+  Parameters: {"NumberOfPeriods"=>"", "LoanAmount"=>"", "InterestRate"=>"", "NumberOfYears"=>"", "calculate_option"=>"0"}
+Rendering template within layouts/application
+Rendering calculate/loancalcr
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalcr?LoanAmount=&InterestRate=&NumberOfYears=&NumberOfPeriods=&calculate_option=0]
+
+
+Processing CalculateController#loancalc (for 127.0.0.1 at 2010-09-03 14:15:00) [GET]
+Rendering template within layouts/application
+Rendering calculate/loancalc
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalc]
+
+
+Processing CalculateController#loancalcr (for 127.0.0.1 at 2010-09-03 14:15:17) [GET]
+  Parameters: {"NumberOfPeriods"=>"12", "LoanAmount"=>"250000", "InterestRate"=>"4", "NumberOfYears"=>"10", "calculate_option"=>"0"}
+Rendering template within layouts/application
+Rendering calculate/loancalcr
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalcr?LoanAmount=250000&InterestRate=4&NumberOfYears=10&NumberOfPeriods=12&calculate_option=0]
+
+
+Processing CalculateController#loancalcr (for 127.0.0.1 at 2010-09-03 14:15:22) [GET]
+  Parameters: {"NumberOfPeriods"=>"12", "LoanAmount"=>"250000", "InterestRate"=>"4", "NumberOfYears"=>"10", "calculate_option"=>"1"}
+Rendering template within layouts/application
+Rendering calculate/loancalcr
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalcr?LoanAmount=250000&InterestRate=4&NumberOfYears=10&NumberOfPeriods=12&calculate_option=1]

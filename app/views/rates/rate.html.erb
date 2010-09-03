@@ -1,0 +1,571 @@
+<div class="innercontent clearfix">
+                                <div id="main">
+                                    <h1>Current Rates</h1>
+                                    <ul class="TabbedPanelsTabGroup">
+                                        <li><%= link_to 'Loans', :anchor => 'loans' %></li>
+                                        <li><%= link_to 'Savings', :anchor => 'savings' %></li>
+                                        <li><%= link_to 'Share Certificates', :anchor => 'shares' %></li>
+                                        <li><%= link_to 'IRA Certificates', :anchor => 'IRA' %></li>
+                                        <li><%= link_to 'Real Estate Loans', :anchor => 'realestate' %></li>
+                                    </ul>
+                                    <a name="loans" id="loans"></a>
+                                    <table class="rates">
+                                        <tr>
+                                        	<th colspan="11"><strong>Loan Rates</strong></th>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Loans</strong></td>
+                                            <td><strong>Maximum Limit</strong></td>
+                                            <td><strong>APR*</strong></td>
+                                            <td><strong>Term</strong></td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>MasterCard (Preferred -No Annual Fee-Ask about our 9.99% APR Intro Rate) </td>
+                                            <td>$15,000</td>
+                                            <td>12.900%</td>
+                                            <td>n/a</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MasterCard (Standard-Rebate Annual Fee) </td>
+                                            <td>$10,000</td>
+                                            <td>14.500%</td>
+                                            <td>n/a</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>MasterCard (Share-Secured) </td>
+                                            <td>$5,000</td>
+                                            <td>14.500%</td>
+                                            <td>n/a</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Open End Line of Credit </td>
+                                            <td>$15,000</td>
+                                            <td>10.90%* to 15.90%*</td>
+                                            <td>n/a</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>Share Secured </td>
+                                            <td>90 % of available Share balance</td>
+                                            <td>share&nbsp;dividend +4.50%</td>
+                                            <td>120</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Share Certificate Secured - Please call for rates and terms </td>
+                                            <td>90% of the CD</td>
+                                            <td>CD Dividend +2.00%</td>
+                                            <td>n/a</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>New Computers (includes software and hardware) or New appliance </td>
+                                            <td>$5,000</td>
+                                            <td>7.90&amp;&nbsp;</td>
+                                            <td>36</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Signature 1-48 Months&nbsp;</td>
+                                            <td>$7,500 - $20,000</td>
+                                            <td>9.99%* to 16.50%*</td>
+                                            <td>1-48</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr class="dark">
+                                        	<td>Signature 49-60 Months</td>
+                                            <td>$7,500 - $20,000</td>
+                                            <td>10.49%* to 17.00%</td>
+                                            <td>49-60</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>New Autos 1-36 months (Including
+                                                model year 2010-2005 and Autos
+                                            never registered or dealer demos
+                                            with 6000 miles or less)** </td>
+                                            <td>400,000 (aggregate)</td>
+                                            <td>4.24%* to 11.25%*&nbsp;</td>
+                                            <td>1-36</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>New Autos 37-60 months (Including
+                                                model year 2010-2005 and Autos
+                                                never registered or dealer demos
+                                            with 6000 miles or less)** </td>
+                                            <td>400,000 (aggregate)</td>
+                                            <td>4.74%* to 11.75%*&nbsp;</td>
+                                            <td>37-60</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>New Autos 61-72 months (Including
+                                                model year 2010-2005 and Autos
+                                                never registered or dealer demos
+                                                with 6000 miles or less)** </td>
+                                            <td>$400,000 (aggregate)</td>
+                                            <td>5.24%* to 12.25%*</td>
+                                            <td>61-72</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr class="dark">
+                                       	 <td>New Autos 73-84 months (Including
+                                       	     model year 2010-2005 and Autos never
+                                       	     registered or dealer demos with
+                                   	        6000 miles or less)*** </td>
+                                            <td>$400,000 (aggregate)</td>
+                                            <td>6.24%* to 13.25%*&nbsp;</td>
+                                            <td>73-84</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Used Autos 2004 or Older 1-48 months - (90% Kelly Blue Book
+                                            plus tax, license, documentation fees)** </td>
+                                            <td>$400,000 (aggregate)</td>
+                                            <td>7.49%* to 14.50%*</td>
+                                            <td>1-48</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>Used Autos 2004 or Older 49-60 months - (90% Kelly Blue Book
+                                            plus tax, license, documentation fees)** </td>
+                                            <td>$400,000 (aggregate)</td>
+                                            <td>5.74%* to 12.75%</td>
+                                            <td>49-60</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Used Autos 2004 or Older 61-72 months - (90% Kelly Blue Book
+                                            plus tax, license, documentation fees)** </td>
+                                            <td>$400,000 (aggregate)</td>
+                                            <td>6.24%* to 13.25%*</td>
+                                            <td>61-72</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>New Boat\Yachts 1-120 months (100% of Purchase Price, Tax,
+                                            License, and Documentation Fees)&nbsp;</td>
+                                            <td>$400,000 (aggregate)</td>
+                                            <td>8.49%* to 15.00%*</td>
+                                            <td>1- 120</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Used&nbsp;Boat\Yachts
+                                            1-120 months (90% of Blue Book evaluation, Tax, License,
+                                            and Documentation Fees)&nbsp;</td>
+                                            <td>$400,000 (aggregate)</td>
+                                            <td>8.00%* to 15.25%*</td>
+                                            <td>1- 120</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>New Motorcycle Loans (dealer purchase only)&nbsp;&nbsp; </td>
+                                            <td>$400,000 (aggregate)</td>
+                                            <td>7.49% to 14.00%</td>
+                                            <td>1-72</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Used&nbsp;Motorcycle&nbsp;</td>
+                                            <td>$400,000 (aggregate)</td>
+                                            <td>7.99&nbsp;to 14.50%*</td>
+                                            <td>1-72</td>
+                                            <td><%= link_to "Calculator", loancalc_path  %></td>
+                                        </tr>
+                                        <tr>
+                                        <td colspan="5">* Rates are
+                                        	subject to change without notice.</td>
+                                        </tr>
+                                    </table>
+                                    <a name="savings" id="savings"></a>
+                                    <p>&nbsp; </p>
+                                    <table class="rates">
+                                        <tr>
+                                        <th colspan="11">Savings Rates</th>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Savings</strong></td>
+                                            <td><strong>Minimum Balance</strong></td>
+                                            <td><strong>Dividend Rate</strong></td>
+                                            <td><strong>APY*</strong></td>
+                                            <td><strong>Term</strong></td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>Regular Savings </td>
+                                            <td>$5.00</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Holiday &amp; Vacation Club </td>
+                                            <td>$10.00</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>Checking </td>
+                                            <td>$20.00</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Money Market Savings and Checking ($2,500 Minimum)</td>
+                                            <td>below $2,500</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>Money Market Savings and Checking ($2,500 Minimum)</td>
+                                            <td>$2,500 to&nbsp;$9,999</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Money Market Savings and Checking ($2,500 Minimum)</td>
+                                            <td>$10,000 to&nbsp;$24,999</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>Money Market Savings and Checking ($2,500 Minimum)</td>
+                                            <td>$25,000 to $49,999</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Money Market Savings and Checking ($2,500 Minimum)</td>
+                                            <td>$50,000 to $99,999</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>Money Market Savings and Checking ($5,000 Minimum)</td>
+                                            <td>$100,000 &amp; above</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Money Market Checking ($5,000 Minimum)</td>
+                                            <td>below $5,000</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>Money Market Checking ($5,000 Minimum)</td>
+                                            <td>$5,000 to $9,999</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Money Market Checking ($5,000 Minimum)</td>
+                                            <td>$10,000 to&nbsp;$24,999</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>Money Market Checking ($5,000 Minimum)</td>
+                                            <td>$25,000 to $49,999</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Money Market Checking ($5,000 Minimum)</td>
+                                            <td>$50,000 to $99,999</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>Money Market Checking ($5,000 Minimum)</td>
+                                            <td>$100,000 &amp; above</td>
+                                            <td>0.10</td>
+                                            <td>0.10</td>
+                                            <td>n/a</td>
+                                        </tr>
+                                        <tr>
+                                        <td colspan="5">* Rates are subject to
+                                            change without notice. Effective
+                                            03/01/2010</td>
+                                        </tr>
+                                    </table>
+									<a name="shares" id="shares"></a>
+                                    <p>&nbsp; </p>
+                                    <table class="rates">
+                                        <tr>
+                                        	<th colspan="11"><strong>Share Certificate Rates</strong></th>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>&nbsp;</td>
+                                            <td colspan="2"><strong>$500 to $9,999</strong></td>
+                                            <td colspan="2"><strong>$10,000 to $24,999</strong></td>
+                                            <td colspan="2"><strong>$25,000 to $49,999</strong></td>
+                                            <td colspan="2"><strong>$50,000 to $99,999</strong></td>
+                                            <td colspan="2"><strong>$100,000 and above</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Term</td>
+                                            <td>Dividend Rate</td>
+                                            <td>APY</td>
+                                            <td>Dividend Rate</td>
+                                            <td>APY</td>
+                                            <td>Dividend Rate</td>
+                                            <td>APY</td>
+                                            <td>Dividend Rate</td>
+                                            <td>APY</td>
+                                            <td>Dividend Rate</td>
+                                            <td>APY</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>3-5 Month</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6-11 Month</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>12-23 Month</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>24-35 Month</td>
+                                            <td>1.24%</td>
+                                            <td>1.25%</td>
+                                            <td>1.24%</td>
+                                            <td>1.25%</td>
+                                            <td>1.24%</td>
+                                            <td>1.25%</td>
+                                            <td>1.24%</td>
+                                            <td>1.25%</td>
+                                            <td>1.24%</td>
+                                            <td>1.25%</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>36-47 Month</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>48 Month</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td colspan="11"><br />
+                                            *APY = Annual Percentage Yield Your savings Federally insured to at least $250,000<br />
+                                            NCUA National Credit Union Administration, a U.S. Government Agency<br />
+                                            <br />
+                                            * Rates are subject to change without
+                                            notice. Effective 03/22/2010</td>
+                                        </tr>
+                                    </table>
+                                    <a name="IRA" id="IRA"></a>
+                                    <p>&nbsp; </p>
+                                    <table class="rates">
+                                        <tr>
+                                            <th colspan="11"><strong>IRA Certificate Rates</strong></th>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td></td>
+                                            <td colspan="2"><strong>$10.00 to $9,999</strong></td>
+                                            <td colspan="2"><strong>$10,000 to $24,999</strong></td>
+                                            <td colspan="2"><strong>$25,000 to $49,999</strong></td>
+                                            <td colspan="2"><strong>$50,000 to $99,999</strong></td>
+                                            <td colspan="2"><strong>$100,000 and above</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Term</td>
+                                            <td>Dividend Rate</td>
+                                            <td>APY</td>
+                                            <td>Dividend Rate</td>
+                                            <td>APY</td>
+                                            <td>Dividend Rate</td>
+                                            <td>APY</td>
+                                            <td>Dividend Rate</td>
+                                            <td>APY</td>
+                                            <td>Dividend Rate</td>
+                                            <td>APY</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>IRA Daily Savings</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                            <td>0.10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12-23 Month</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                            <td>.75%</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>24-35 Month</td>
+                                            <td>1.24%</td>
+                                            <td>1.25%</td>
+                                            <td>1.24%</td>
+                                            <td>1.25%</td>
+                                            <td>1.24%</td>
+                                            <td>1.25%</td>
+                                            <td>1.24%</td>
+                                            <td>1.25%</td>
+                                            <td>1.24%</td>
+                                            <td>1.25%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>36-47 Month</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td>48 - 59 Month</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>60 - 72 Month</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                            <td>1.49%</td>
+                                            <td>1.50%</td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td colspan="11"><br />
+                                            *APY = Annual Percentage Yield Your savings Federally insured to at least $250,000<br />
+                                            NCUA National Credit Union Administration, a U.S. Government Agency<br />
+                                            <br />
+                                            * Rates are subject to change without
+                                            notice. Effective 03/22/2010</td>
+                                        </tr>
+                                    </table>
+                                    <p><a name="realestate" id="realestate"></a></p>
+                                    <table class="rates">
+                                        <tr>
+                                            <th colspan="10"><strong>Real Estate
+                                                    Loans</strong></th>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Account Description</strong></td>
+                                            <td><strong>Rate Type</strong></td>
+                                            <td><strong>Annual Percentage Rate
+                                                    (APR)</strong></td>
+                                            <td><strong>Maximum Repayment Period</strong></td>
+                                            <td><strong>Amount Financed</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>First Trust Deed (Owner Occupied)</td>
+                                            <td>Fixed Rate</td>
+                                            <td><%= link_to 'Quoted Daily', "http://www.cupartners.com/hlc.htm", :rel => "external" %></td>
+                                            <td>30 Years</td>
+                                            <td>Conforming and Jumbo Conforming
+                                                Limits &ndash; Call our Home
+                                                Loan Center at 1-800-574-4556
+                                                or apply online at <% link_to "www.cupartners.com/hlc.htm", "http://www.cupartners.com/hlc.htm", :rel => "external" %></td>
+                                        </tr>
+                                        <tr class="dark">
+                                            <td colspan="5"><span class="smallprint">*Rates
+                                                    are subject to change without
+                                            notice.</span></td>
+                                        </tr>
+                                    </table>
+                                    <br />
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>

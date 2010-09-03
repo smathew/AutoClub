@@ -1,0 +1,111 @@
+<%= javascript_include_tag "style" %>
+<%= javascript_include_tag "scv" %>
+<TABLE WIDTH=500>
+  <tr> 
+    <td> 
+      <CENTER>
+      </CENTER>
+      <% form_tag(savcalcr_path, :method => :get) do %>
+        <CENTER>
+          <TABLE Border=1 Cellpadding=7>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> 
+                <CENTER>
+                  <span class=FontThree> Savings Calculator</span>
+                </CENTER>
+              </TD>
+            </TR>
+            <TR> </TR>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#EEEEEE> <span class=FontFour> 
+                <INPUT Type="radio" NAME=calculate_option VALUE="0" CHECKED>
+                Calculate the Ending Balance<BR>
+                (Hint: Enter amounts in the <U>Beginning Balance</U> and <U>Periodic 
+                Contribution</U> boxes.)<BR>
+                <BR>
+                <HR>
+                <INPUT Type="radio" NAME=calculate_option VALUE="1">
+                Calculate the Beginning Balance<BR>
+                (Hint: Enter amounts in the <U>Periodic Contribution</U> and <U>Ending 
+                Balance</U> boxes.)<BR>
+                <BR>
+                <HR>
+                <INPUT Type="radio" NAME=calculate_option VALUE="2">
+                Calculate the Periodic Contribution<BR>
+                (Hint: Enter amounts in the <U>Beginning Balance</U> and <U>Ending 
+                Balance</U> boxes.)<BR>
+                <BR>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Beginning Balance: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> 
+                <INPUT style="font-family: Verdana, Arial; font-size: 8pt" onFocus=select(); onBlur = checkBB(this.form); NAME = BeginningBalance VALUE=0 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Interest Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> 
+                <INPUT style="font-family: Verdana, Arial; font-size: 8pt" onFocus=select(); onBlur = checkIR(this.form); NAME = InterestRate VALUE=8 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Periodic Contribution: 
+                </span> </TD>
+              <TD BGCOLOR=#EEEEFF> 
+                <INPUT style="font-family: Verdana, Arial; font-size: 8pt" onFocus=select(); onBlur = checkPC(this.form); NAME = PeriodicContribution VALUE=0 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Number of Periods: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEFF> 
+                <INPUT style="font-family: Verdana, Arial; font-size: 8pt" onFocus=select(); onBlur = checkNP(this.form); NAME = NumberOfPeriods VALUE=0 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Ending Balance: </span> 
+              </TD>
+              <TD BGCOLOR=#EEFFEE> 
+                <INPUT style="font-family: Verdana, Arial; font-size: 8pt" onFocus=select(); onBlur = checkEB(this.form); NAME = EndingBalance VALUE=0 >
+              </TD>
+            </TR>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFour> 
+                <INPUT Type="radio" NAME="compound_option" VALUE="0">
+                Compound on a Weekly Basis<BR>
+                <INPUT Type="radio" NAME="compound_option" VALUE="1" CHECKED>
+                Compound on a Monthly Basis<BR>
+                <INPUT Type="radio" NAME="compound_option" VALUE="2">
+                Compound on a Quarterly Basis<BR>
+                <INPUT Type="radio" NAME="compound_option" value="3">
+                Compound on an Annual Basis<BR>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD COLSPAN=2 BGCOLOR=#FFFFEE> <span class=FontFive>  
+                <INPUT TYPE="checkbox" NAME="today" VALUE="1" CHECKED>
+                Show Ending Balance in Current Dollars<BR>
+                (Hint: Check this box to show the ending balance in today's dollars.)<BR>
+                <HR>
+                 
+                <INPUT TYPE="checkbox" NAME="inflation" VALUE="0">
+                Adjust for Inflation<BR>
+                (Hint: Check this box to inflate the periodic contributions.)<BR>
+                <BR>
+                </span> </TD>
+            </TR>
+            <TR> 
+              <TD BGCOLOR=#EEEEEE> <span class=FontFour> Inflation Rate: </span> 
+              </TD>
+              <TD BGCOLOR=#FFEEEE> 
+                <INPUT style="font-family: Verdana, Arial; font-size: 8pt" onFocus=select(); onBlur = checkInf(this.form); NAME = InflationRate VALUE=3 >
+              </TD>
+            </TR>
+          </TABLE>
+		  <%= javascript_include_tag "enda" %>
+        </center>
+      <% end %>
+</table>
