@@ -1,13 +1,25 @@
 <div id="innercontent" class="clearfix">
 	<%= render :partial => 'layouts/slideshow', :locals => {
 		:slideimages => [
-			{ :image => 'backtoschool_signature2.jpg', :url => 'pdf/horizons.pdf' },
-			{ :image => 'backtoschool.jpg', :url => transfer_path },
+			{ :image => 'EnterpriseBanner.jpg', :url => whatsnew_path },
+			{ :image => 'fall.jpg', :url => transfer_path },
+			{ :image => 'fall2.jpg', :url => transfer_path },
 			{ :image => 'realestate.jpg', :url => realestate_path }
 		]}
 	-%>	
-		
-                              <hr />
+		 <div class="bottomborder clearfix">
+                            <p class="centertext"><%= link_to image_tag("enterprise_ad2.jpg", :alt=>"Enterprise Promo", :usemap=>"Map"), onlineapplications_path %>
+                                    <map name="Map" id="Map">
+                                        <area shape="rect" coords="15,237,370,260" href="http://www.cuautodeals.com" target="_blank" alt="" />
+                                    </map>
+                          </p>
+                                        <p><%= link_to image_tag("enterprise.logo.gif", :class=>"fleft", :alt=>"Enterprise Logo"), "http://www.cuautodeals.com", :rel=>"external" %></p>
+                                        <p class="fright"><strong><%= link_to "Click here to apply now!", onlineapplications_path %>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; </strong></p>
+                                </div>
+                                <h2 class="centertext"><br />
+                                </h2>
+                                
                                 <h2 class="centertext">ATTENTION:<br /> If you have received an email regarding a &quot;Member Survey&quot; or &quot;Online Survey&quot; claiming to be from the NCUA - this is a phishing attempt to gain your personal information.  These emails are not from the NCUA and
                                 should be disregarded.  If you feel your information has been compromised, please contact the credit union immediately.</h2>
                                 <hr />
@@ -23,13 +35,14 @@
                                     Regulation E changes and to opt-in to overdraft
                                     protection please <%= link_to "click here", regulatione_path,  :class => 'bold' %> to go to our <strong>Regulation E</strong> page. </p>
                                 <p>&nbsp;</p>
-                                <p><%= image_tag "go_green_estate.jpg", :alt => '' %></p>
+                                <p><%= image_tag "go_green_estate.jpg", :alt=>"" %></p>
                                 <table>
                                     <tr>
                                         <td>
                                             <%= link_to image_tag("promo1.jpg", :alt => ""), "pdf/mastercard.pdf", :rel => 'external' %></td>                      
                                         <td><%= link_to image_tag("promo2a.jpg", :alt => ""), estatements_path %></td>
-                                        <td><%= link_to image_tag("promo3.jpg", :alt => "Promotion"), "flash/acfcu.swf" %></td>
+                                        <td><%= link_to image_tag("promo3.jpg", :alt => "Promotion"), "flash/acfcu.swf", :rel => "vidbox", :title=>"About ACFCU" %>
+</td>
                                     </tr>
                                 </table>
                                 <p>&nbsp;</p>
@@ -37,14 +50,14 @@
                                 <table class="prefoot">
                                     <tr>
                                         <td><br />
-                                            <%= image_tag "enterpriselogo.gif", :alt => "Enterprise Logo" %>
+                                            <%= image_tag "enterpriselogo.gif", :alt=>"Enterprise Logo" %>
                                             <p class="centertext">Search for a car!<br />
-                                                <strong><%= link_to "http://www.cuautodeals.com", "http://www.cuautodeals.com", :rel => 'external' %></strong></p></td>
+                                                <strong><%= link_to "http://www.cuautodeals.com", "http://www.cuautodeals.com", :rel=>"external" %></strong></p></td>
                                         <td><p class="centertext">
-                                                <%= image_tag "memberrewards.jpg", :alt => "Member Rewards" %></p>
-                                            <p class="centertext"> 
-                                                <strong><%= link_to "For a Member Rewards<br /> Referral Form - Click here!", "pdf/MEMBER REWARDS flyer feb08.doc", :rel => 'external' %></strong></p></td>
+                                                <%= image_tag "memberrewards.jpg", :alt=>"Member Rewards" %></p>
+                                            <p class="centertext">
+                                                <strong><%= link_to "For a Member Rewards<br />Referral Form - Click here!", "pdf/MEMBER%20REWARDS%20flyer%20feb08.doc", :rel=>"external" %></strong></p></td>
                                         <td><p class="centertext">
-                                                <strong><%= link_to "To find one of over 25,000 of the nearest CO-OP ATM machine near you, including<br /> 7-Eleven ATM&rsquo;s, just visit the CO-OP&nbsp; web site by clicking here, or Call Toll Free 1-888-748-3266", "http://www.co-opnetwork.org/public/find_atm/index.cfm", :rel => 'external' %></strong></p></td>
+                                                <strong><%= link_to "To find one of over 25,000 of the nearest CO-OP ATM machine near you, including<br /> 7-Eleven ATM&rsquo;s, just visit the CO-OP&nbsp; web site by clicking here, or Call Toll Free 1-888-748-3266", "http://www.co-opnetwork.org/public/find_atm/index.cfm", :rel=>"external" %></strong></p></td>
                                     </tr>
                                 </table>

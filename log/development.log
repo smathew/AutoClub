@@ -1,6 +1,333 @@
 
 
-Processing HomeController#index (for 127.0.0.1 at 2010-09-03 13:42:59) [GET]
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 11:20:52) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 11:24:23) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-25 14:48:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/index_member_over.jpg" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 14:48:31) [GET]
+Rendering template within layouts/application
+Rendering home/index
+ERROR: compiling _run_erb_app47views47home47index46html46erb RAISED compile error
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:16: syntax error, unexpected '<'
+...eals.com", :rel=>"external" %</p>
+                              ^
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:17: unknown regexp options - trg
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:17: unmatched ): /p>
+                                        <p class="fright"><strong><%= link_to "Click here to apply now!", onlineapplications_path ).to_s); @output_buffer.concat "\n                                        &nbsp; &nbsp; &nbsp; &nbsp; </
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:17: syntax error, unexpected '<'
+...nbsp; &nbsp; &nbsp; </strong></p>\n                         ...
+                              ^
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:17: unknown regexp options - dv
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:17: syntax error, unexpected $undefined
+...                       </div>\n                             ...
+                              ^
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:17: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...                     <h2 class=\"centertext\"><br />\n      ...
+                              ^
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:64: syntax error, unexpected kENSURE, expecting ')'
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:66: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47home47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"innercontent\" class=\"clearfix\">\n\t"
+; @output_buffer.concat(( render :partial => 'layouts/slideshow', :locals => {
+		:slideimages => [
+			{ :image => 'EnterpriseBanner.jpg', :url => whatsnew_path },
+			{ :image => 'fall.jpg', :url => transfer_path },
+			{ :image => 'fall2.jpg', :url => transfer_path },
+			{ :image => 'realestate.jpg', :url => realestate_path }
+		]}
+	).to_s); @output_buffer.concat "\t\n\t\t <div class=\"bottomborder clearfix\">\n                            <p class=\"centertext\">"
+
+; @output_buffer.concat(( link_to image_tag("enterprise_ad2.jpg", :alt=>"Enterprise Promo", :usemap=>"Map"), onlineapplications_path ).to_s); @output_buffer.concat "\n                                    <map name=\"Map\" id=\"Map\">\n                                        <area shape=\"rect\" coords=\"15,237,370,260\" href=\"http://www.cuautodeals.com\" target=\"_blank\" alt=\"\" />\n                                    </map>\n                            </a></p>\n                                        <p>"
+
+
+
+
+; @output_buffer.concat(( link_to image_tag("enterprise.logo.gif", :class=>"fleft", :alt=>"Enterprise Logo"), "http://www.cuautodeals.com", :rel=>"external" %</p>
+                                        <p class="fright"><strong><%= link_to "Click here to apply now!", onlineapplications_path ).to_s); @output_buffer.concat "\n                                        &nbsp; &nbsp; &nbsp; &nbsp; </strong></p>\n                                </div>\n                                <h2 class=\"centertext\"><br />\n                                </h2>\n                                \n                                <h2 class=\"centertext\">ATTENTION:<br /> If you have received an email regarding a &quot;Member Survey&quot; or &quot;Online Survey&quot; claiming to be from the NCUA - this is a phishing attempt to gain your personal information.  These emails are not from the NCUA and\n                                should be disregarded.  If you feel your information has been compromised, please contact the credit union immediately.</h2>\n                                <hr />\n                                <h2>Get Ahead of ATM/Debit Card Overdraft Regulation\n                                    Changes</h2>\n                                <p>Congress recently changed the rules to protect\n                                    consumers from overdraft fees, but this means\n                                    you, our member, need to opt-in to your ATM/Debit\n                                    Card overdraft protection <strong>BEFORE</strong> the\n                                    August 15, 2010 deadline if you do not want\n                                    transactions canceled when you overdraw your\n                                    account balance. For more information regarding\n                                    Regulation E changes and to opt-in to overdraft\n                                    protection please "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( link_to "click here", regulatione_path,  :class => 'bold' ).to_s); @output_buffer.concat " to go to our <strong>Regulation E</strong> page. </p>\n                                <p>&nbsp;</p>\n                                <p>"
+
+; @output_buffer.concat(( image_tag "go_green_estate.jpg", :alt=>"" ).to_s); @output_buffer.concat "</p>\n                                <table>\n                                    <tr>\n                                        <td>\n                                            "
+
+
+
+; @output_buffer.concat(( link_to image_tag("promo1.jpg", :alt => ""), "pdf/mastercard.pdf", :rel => 'external' ).to_s); @output_buffer.concat "</td>                      \n                                        <td>"
+; @output_buffer.concat(( link_to image_tag("promo2a.jpg", :alt => ""), estatements_path ).to_s); @output_buffer.concat "</td>\n                                        <td>"
+; @output_buffer.concat(( link_to image_tag("promo3.jpg", :alt => "Promotion"), "flash/acfcu.swf", :rel => "vidbox", :title=>"About ACFCU" ).to_s); @output_buffer.concat "\n</td>\n                                    </tr>\n                                </table>\n                                <p>&nbsp;</p>\n                                </div>\n                                <table class=\"prefoot\">\n                                    <tr>\n                                        <td><br />\n                                            "
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( image_tag "enterpriselogo.gif", :alt=>"Enterprise Logo" ).to_s); @output_buffer.concat "\n                                            <p class=\"centertext\">Search for a car!<br />\n                                                <strong>"
+
+; @output_buffer.concat(( link_to "http://www.cuautodeals.com", "http://www.cuautodeals.com", :rel=>"external" ).to_s); @output_buffer.concat "</strong></p></td>\n                                        <td><p class=\"centertext\">\n                                                "
+
+; @output_buffer.concat(( image_tag "memberrewards.jpg", :alt=>"Member Rewards" ).to_s); @output_buffer.concat "</p>\n                                            <p class=\"centertext\">\n                                                <strong>"
+
+; @output_buffer.concat(( link_to "For a Member Rewards<br />Referral Form - Click here!", "http://www.autoclubfcu.com/pdf/MEMBER%20REWARDS%20flyer%20feb08.doc", :rel=>"external" ).to_s); @output_buffer.concat "</strong></p></td>\n                                        <td><p class=\"centertext\">\n                                                <strong>"
+
+; @output_buffer.concat(( link_to "To find one of over 25,000 of the nearest CO-OP ATM machine near you, including<br /> 7-Eleven ATM&rsquo;s, just visit the CO-OP&nbsp; web site by clicking here, or Call Toll Free 1-888-748-3266", "http://www.co-opnetwork.org/public/find_atm/index.cfm", :rel=>"external" ).to_s); @output_buffer.concat "</strong></p></td>\n                                    </tr>\n                                </table>"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:66:in `compile!'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1338:in `perform_action_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+C:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:16: syntax error, unexpected '<'
+...eals.com", :rel=>"external" %</p>
+                              ^
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:17: unknown regexp options - trg
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:17: unmatched ): /p>
+                                        <p class="fright"><strong><%= link_to "Click here to apply now!", onlineapplications_path ).to_s); @output_buffer.concat "\n                                        &nbsp; &nbsp; &nbsp; &nbsp; </
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:17: syntax error, unexpected '<'
+...nbsp; &nbsp; &nbsp; </strong></p>\n                         ...
+                              ^
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:17: unknown regexp options - dv
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:17: syntax error, unexpected $undefined
+...                       </div>\n                             ...
+                              ^
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:17: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...                     <h2 class=\"centertext\"><br />\n      ...
+                              ^
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:64: syntax error, unexpected kENSURE, expecting ')'
+C:/Rails Projects/websites/autoclubfcu.com/app/views/home/index.html.erb:66: syntax error, unexpected kEND, expecting ')') on line #16 of app/views/home/index.html.erb:
+13:                                         <area shape="rect" coords="15,237,370,260" href="http://www.cuautodeals.com" target="_blank" alt="" />
+14:                                     </map>
+15:                             </a></p>
+16:                                         <p><%= link_to image_tag("enterprise.logo.gif", :class=>"fleft", :alt=>"Enterprise Logo"), "http://www.cuautodeals.com", :rel=>"external" %</p>
+17:                                         <p class="fright"><strong><%= link_to "Click here to apply now!", onlineapplications_path %>
+18:                                         &nbsp; &nbsp; &nbsp; &nbsp; </strong></p>
+19:                                 </div>
+
+    app/views/home/index.html.erb:66:in `compile!'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 14:48:53) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (109.4ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 250ms (View: 250, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#transfer (for 127.0.0.1 at 2010-10-25 14:53:19) [GET]
+Rendering template within layouts/application
+Rendering home/transfer
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/transfer]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-25 14:53:19) [GET]
+
+ActionController::RoutingError (No route matches "/images/debitcard.jpg" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing OlservsController#onlineapplications (for 127.0.0.1 at 2010-10-25 14:53:29) [GET]
+Rendering template within layouts/application
+Rendering olservs/onlineapplications
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/onlineapplications]
+
+
+Processing OlservsController#onlineapplications (for 127.0.0.1 at 2010-10-25 14:56:16) [GET]
+Rendering template within layouts/application
+Rendering olservs/onlineapplications
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/onlineapplications]
+
+
+Processing OlservsController#onlineapplications (for 127.0.0.1 at 2010-10-25 14:56:18) [GET]
+Rendering template within layouts/application
+Rendering olservs/onlineapplications
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/onlineapplications]
+
+
+Processing OlservsController#onlineapplications (for 127.0.0.1 at 2010-10-25 14:56:18) [GET]
+Rendering template within layouts/application
+Rendering olservs/onlineapplications
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/onlineapplications]
+
+
+Processing OlservsController#onlineapplications (for 127.0.0.1 at 2010-10-25 14:57:05) [GET]
+Rendering template within layouts/application
+Rendering olservs/onlineapplications
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/onlineapplications]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 14:57:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:00:33) [GET]
 Rendering template within layouts/application
 Rendering home/index
 Rendered layouts/_slideshow (0.0ms)
@@ -9,63 +336,25 @@ Rendered layouts/_footer (15.6ms)
 Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
 
 
-Processing HomeController#memberjoin (for 127.0.0.1 at 2010-09-03 13:43:04) [GET]
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:01:58) [GET]
 Rendering template within layouts/application
-Rendering home/memberjoin
-Rendered layouts/_header (15.6ms)
-Rendered layouts/_footer (0.0ms)
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/memberjoin]
-
-
-Processing HomeController#aboutus (for 127.0.0.1 at 2010-09-03 13:43:11) [GET]
-Rendering template within layouts/application
-Rendering home/aboutus
-Rendered layouts/_header (15.6ms)
-Rendered layouts/_footer (0.0ms)
-Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/aboutus]
-
-
-Processing HomeController#faq (for 127.0.0.1 at 2010-09-03 13:43:14) [GET]
-Rendering template within layouts/application
-Rendering home/faq
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
 Rendered layouts/_header (0.0ms)
-Rendered layouts/_footer (15.6ms)
-Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/faq]
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
 
 
-Processing HomeController#faq (for 127.0.0.1 at 2010-09-03 13:43:15) [GET]
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:02:32) [GET]
 Rendering template within layouts/application
-Rendering home/faq
-Rendered layouts/_header (0.0ms)
-Rendered layouts/_footer (15.6ms)
-Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/home/faq]
-
-
-Processing HomeController#faq (for 127.0.0.1 at 2010-09-03 13:43:23) [GET]
-Rendering template within layouts/application
-Rendering home/faq
+Rendering home/index
+Rendered layouts/_slideshow (15.6ms)
 Rendered layouts/_header (15.6ms)
 Rendered layouts/_footer (0.0ms)
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/faq]
+Completed in 109ms (View: 109, DB: 0) | 200 OK [http://localhost/]
 
 
-Processing HomeController#faq (for 127.0.0.1 at 2010-09-03 13:43:25) [GET]
-Rendering template within layouts/application
-Rendering home/faq
-Rendered layouts/_header (15.6ms)
-Rendered layouts/_footer (0.0ms)
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/home/faq]
-
-
-Processing HomeController#contact (for 127.0.0.1 at 2010-09-03 13:43:33) [GET]
-Rendering template within layouts/application
-Rendering home/contact
-Rendered layouts/_header (15.6ms)
-Rendered layouts/_footer (0.0ms)
-Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/contact]
-
-
-Processing HomeController#index (for 127.0.0.1 at 2010-09-03 13:43:35) [GET]
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:04:13) [GET]
 Rendering template within layouts/application
 Rendering home/index
 Rendered layouts/_slideshow (0.0ms)
@@ -74,110 +363,124 @@ Rendered layouts/_footer (15.6ms)
 Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
 
 
-Processing OlservsController#cufees (for 127.0.0.1 at 2010-09-03 13:43:39) [GET]
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:04:40) [GET]
 Rendering template within layouts/application
-Rendering olservs/cufees
-Rendered layouts/_header (15.6ms)
-Rendered layouts/_footer (0.0ms)
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/cufees]
-
-
-Processing OlservsController#infodesk (for 127.0.0.1 at 2010-09-03 13:43:41) [GET]
-Rendering template within layouts/application
-Rendering olservs/infodesk
-Rendered layouts/_header (0.0ms)
-Rendered layouts/_footer (0.0ms)
-Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/infodesk]
-
-
-Processing CalculateController#loancalc (for 127.0.0.1 at 2010-09-03 13:43:44) [GET]
-Rendering template within layouts/application
-Rendering calculate/loancalc
-Rendered layouts/_header (15.6ms)
-Rendered layouts/_footer (0.0ms)
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalc]
-
-
-Processing CalculateController#loancalcr (for 127.0.0.1 at 2010-09-03 13:43:48) [GET]
-  Parameters: {"NumberOfPeriods"=>"12", "LoanAmount"=>"25000", "InterestRate"=>"4", "NumberOfYears"=>"5", "calculate_option"=>"0"}
-Rendering template within layouts/application
-Rendering calculate/loancalcr
-Rendered layouts/_header (0.0ms)
-Rendered layouts/_footer (0.0ms)
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalcr?LoanAmount=25000&InterestRate=4&NumberOfYears=5&NumberOfPeriods=12&calculate_option=0]
-
-
-Processing CalculateController#loancalc (for 127.0.0.1 at 2010-09-03 14:12:31) [GET]
-Rendering template within layouts/application
-Rendering calculate/loancalc
-Rendered layouts/_header (15.6ms)
-Rendered layouts/_footer (0.0ms)
-Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/loancalc]
-
-
-Processing CalculateController#calculates (for 127.0.0.1 at 2010-09-03 14:12:44) [GET]
-Rendering template within layouts/application
-Rendering calculate/calculates
-Rendered layouts/_header (15.6ms)
-Rendered layouts/_footer (0.0ms)
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/calculates]
-
-
-Processing CalculateController#savcalc (for 127.0.0.1 at 2010-09-03 14:12:48) [GET]
-Rendering template within layouts/application
-Rendering calculate/savcalc
-Rendered layouts/_header (15.6ms)
-Rendered layouts/_footer (62.5ms)
-Completed in 94ms (View: 94, DB: 0) | 200 OK [http://localhost/savcalc]
-
-
-Processing CalculateController#savcalcr (for 127.0.0.1 at 2010-09-03 14:13:01) [GET]
-  Parameters: {"NumberOfPeriods"=>"0", "compound_option"=>"1", "InterestRate"=>"8", "today"=>"1", "InflationRate"=>"3", "PeriodicContribution"=>"0", "calculate_option"=>"0", "BeginningBalance"=>"0", "EndingBalance"=>"0"}
-Rendering template within layouts/application
-Rendering calculate/savcalcr
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
 Rendered layouts/_header (0.0ms)
 Rendered layouts/_footer (15.6ms)
-Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/savcalcr?calculate_option=0&BeginningBalance=0&InterestRate=8&PeriodicContribution=0&NumberOfPeriods=0&EndingBalance=0&compound_option=1&today=1&InflationRate=3]
+Completed in 109ms (View: 94, DB: 0) | 200 OK [http://localhost/]
 
 
-Processing CalculateController#loancalc (for 127.0.0.1 at 2010-09-03 14:14:39) [GET]
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:06:15) [GET]
 Rendering template within layouts/application
-Rendering calculate/loancalc
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:06:36) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (15.6ms)
+Rendered layouts/_header (62.5ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:07:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:07:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
 Rendered layouts/_header (0.0ms)
 Rendered layouts/_footer (15.6ms)
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalc]
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
 
 
-Processing CalculateController#loancalcr (for 127.0.0.1 at 2010-09-03 14:14:54) [GET]
-  Parameters: {"NumberOfPeriods"=>"", "LoanAmount"=>"", "InterestRate"=>"", "NumberOfYears"=>"", "calculate_option"=>"0"}
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:09:01) [GET]
 Rendering template within layouts/application
-Rendering calculate/loancalcr
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:10:07) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
 Rendered layouts/_header (15.6ms)
 Rendered layouts/_footer (0.0ms)
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalcr?LoanAmount=&InterestRate=&NumberOfYears=&NumberOfPeriods=&calculate_option=0]
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/]
 
 
-Processing CalculateController#loancalc (for 127.0.0.1 at 2010-09-03 14:15:00) [GET]
+Processing OlservsController#regulatione (for 127.0.0.1 at 2010-10-25 15:10:57) [GET]
 Rendering template within layouts/application
-Rendering calculate/loancalc
+Rendering olservs/regulatione
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/regulatione]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:20:59) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:24:31) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing OlservsController#onlineapplications (for 127.0.0.1 at 2010-10-25 15:24:37) [GET]
+Rendering template within layouts/application
+Rendering olservs/onlineapplications
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/onlineapplications]
+
+
+Processing HomeController#whatsnew (for 127.0.0.1 at 2010-10-25 15:24:45) [GET]
+Rendering template within layouts/application
+Rendering home/whatsnew
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/whatsnew]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:24:50) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
 Rendered layouts/_header (0.0ms)
 Rendered layouts/_footer (15.6ms)
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalc]
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
 
 
-Processing CalculateController#loancalcr (for 127.0.0.1 at 2010-09-03 14:15:17) [GET]
-  Parameters: {"NumberOfPeriods"=>"12", "LoanAmount"=>"250000", "InterestRate"=>"4", "NumberOfYears"=>"10", "calculate_option"=>"0"}
+Processing HomeController#index (for 127.0.0.1 at 2010-10-25 15:25:04) [GET]
 Rendering template within layouts/application
-Rendering calculate/loancalcr
-Rendered layouts/_header (15.6ms)
-Rendered layouts/_footer (0.0ms)
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalcr?LoanAmount=250000&InterestRate=4&NumberOfYears=10&NumberOfPeriods=12&calculate_option=0]
-
-
-Processing CalculateController#loancalcr (for 127.0.0.1 at 2010-09-03 14:15:22) [GET]
-  Parameters: {"NumberOfPeriods"=>"12", "LoanAmount"=>"250000", "InterestRate"=>"4", "NumberOfYears"=>"10", "calculate_option"=>"1"}
-Rendering template within layouts/application
-Rendering calculate/loancalcr
-Rendered layouts/_header (15.6ms)
-Rendered layouts/_footer (0.0ms)
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/loancalcr?LoanAmount=250000&InterestRate=4&NumberOfYears=10&NumberOfPeriods=12&calculate_option=1]
+Rendering home/index
+Rendered layouts/_slideshow (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/]

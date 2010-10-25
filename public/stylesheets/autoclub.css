@@ -104,6 +104,7 @@ ul.errormsg
 	color:#FF0000;
 }
 
+
 /*******************/
 /*   SLIDESHOW     */
 /*******************/
@@ -121,6 +122,13 @@ a.slideshow img#slide2 {
 	left: 0;
 	z-index: 2;
 }
+
+
+
+
+
+
+
 
 /*******************/
 /*     TABLES      */
@@ -178,6 +186,7 @@ table.default th{
 	font-weight: bold;
 }
 
+
 table.mortgage {
 	width: 280px;
 	margin: 0 auto 0 auto;
@@ -202,6 +211,9 @@ table.mortgage th {
 	padding: 5px;
 }
 
+
+
+
 table.savings {
 	border: #0565A4 2px solid;
 	width: 360px;
@@ -224,6 +236,8 @@ table.savings td {
 }
 
 
+
+
 table.rates {
 	font-size: 11px;
 }
@@ -241,6 +255,8 @@ table.rates tr.dark {
 	background: #d2d2d2;
 	font-size: 11px;
 }
+
+
 
 
 table.contact {
@@ -271,11 +287,18 @@ table.prefoot td{
 	padding: 5px;
 }
 
+
 fieldset {
 	border: 0 none;
 }
 
+
 /*********END TABLES********/
+
+
+
+
+
 
 
 /*****************/
@@ -390,6 +413,10 @@ a:active {
 
 /*********END TEXT ********/
 
+
+
+
+
 /*****************/
 /*    FIXINS     */
 /*****************/
@@ -432,6 +459,11 @@ img#floatright {
 }
 /*********END FIXINS***********/
 
+
+
+
+
+
 .prefooter {
 	text-align: center;
 	padding: 5px 10px 5px 10px;
@@ -466,8 +498,4 @@ img#floatright {
 	float: left;
 	width: 100%;
 	padding-bottom: 15px;
-}
-
-#slideshow {
-	height: 280px;
 }
